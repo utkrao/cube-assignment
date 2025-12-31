@@ -1,3 +1,11 @@
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.getElementById('sliderTrack');
     const slides = Array.from(track.children);
